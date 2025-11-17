@@ -3,7 +3,7 @@ module half_adder (
 	input x, y
 );
 
-	assign S = x ^ y;
-	assign C = x & y;
+	xor G1 (S, x, y);
+	and G2 (C, x, y);
 
 endmodule
